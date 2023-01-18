@@ -1,2 +1,2 @@
 aws ec2 create-key-pair --key-name youtube --query 'keyMaterial' --output text > youtube.pem
-
+chmod 400 youtube.pem
