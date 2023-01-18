@@ -1,6 +1,6 @@
-aws ec2 create-key-pair --key-name youtube --query 'keyMaterial' --output text > youtube.pem
-chmod 400 youtube.pem
-aws ec2 describe-key-pairs --key-names yotube
+aws ec2 create-key-pair --key-name youtube --query 'keyMaterial' --output text > webapp.pem
+chmod 400 webapp.pem
+aws ec2 describe-key-pairs --key-names webapp
 # To delete the key pair
 # aws ec2 delete-key-pair --key-name santra
 aws ec2 create-security-group --group-name sg_webapp --description 'sg_webapp' --vpc-id <##########>
